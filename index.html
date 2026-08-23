@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Namangan Shashlik | Milliy Menyusi & Onlayn Buyurtma</title>
+    <meta name="description" content="Namangan Shashlik official menyusi. Tansiq go'sht shashliklar, salatlar va salqin ichimliklar. Onlayn narxlar va hisob-kitob.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow & Grid Overlay -->
+    <div class="bg-glow"></div>
+    <div class="bg-glow bg-glow-secondary"></div>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="brand">
+                <div class="brand-logo brand-logo-img">
+                    <img src="images/namangan_shashlik_logo.webp" alt="№1 Namangan Shashlik Logo">
+                </div>
+                <div class="brand-info">
+                    <h1>Namangan Shashlik</h1>
+                    <p class="brand-tagline">Haqiqiy Namangan uslubidagi tamsiq shashliklar</p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button id="qr-code-btn" class="qr-btn" title="QR Kod menyu">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span>QR Kod</span>
+                </button>
+
+                <a href="https://instagram.com/namangan.shashlik" target="_blank" class="instagram-btn" title="Instagram sahifamiz">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="insta-handle">@namangan.shashlik</span>
+                </a>
+
+                <button id="admin-toggle-btn" class="admin-btn" title="Narxlarni boshqarish">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span class="btn-text-mobile-hide">Narxlarni o'zgartirish</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-card">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fa-solid fa-utensils"></i> O'zbek Milliy Taomlari</span>
+                    <h2>Xush kelibsiz, Namangan Shashlik Xonasiga!</h2>
+                    <p>Issiq charxda pishgan mazali shashliklar, Mumtoz non, yangi salatlar va muzdek salqin suvlarni tanlang va umumiy hisobni darhol ko'ring.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">9+</span>
+                            <span class="stat-label">Shashlik turlari</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Halol & Yangi</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num"><i class="fa-brands fa-instagram"></i></span>
+                            <span class="stat-label">@namangan.shashlik</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/namangan_shashlik_logo.webp" alt="№1 Namangan Shashlik Logo" class="hero-img hero-img-logo">
+                    <div class="hero-img-badge">
+                        <i class="fa-solid fa-crown"></i>
+                        <span>Rasmiy Logotip</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="controls-section">
+        <div class="container">
+            <div class="controls-wrapper">
+                <!-- Search Box -->
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Taom yoki ichimlik qidirish... (masalan: Qiyma, Cola, Mumtoz non, Suzma)">
+                    <button id="clear-search" class="clear-search-btn" hidden><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="category-tabs" id="category-tabs">
+                    <button class="tab-btn active" data-category="all">
+                        <i class="fa-solid fa-border-all"></i> Barchasi
+                    </button>
+                    <button class="tab-btn" data-category="shashlik">
+                        <i class="fa-solid fa-drumstick-bite"></i> Shashliklar
+                    </button>
+                    <button class="tab-btn" data-category="drink">
+                        <i class="fa-solid fa-bottle-water"></i> Suvlar & Ichimliklar
+                    </button>
+                    <button class="tab-btn" data-category="side">
+                        <i class="fa-solid fa-bowl-rice"></i> Salatlar & Non
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items Grid Section -->
+    <main class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h3 id="section-title">Taomlar Menyusi</h3>
+                <span class="item-count-badge" id="item-count-badge">20 ta mahsulot</span>
+            </div>
+
+            <!-- Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu Items will be dynamically generated by JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Instagram Footer Card -->
+    <section class="instagram-banner-section">
+        <div class="container">
+            <div class="insta-banner-card">
+                <div class="insta-icon-large">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="insta-banner-info">
+                    <h3>Bizni Instagramda kuzatib boring!</h3>
+                    <p>Eng so'nggi yangiliklar, aksiyalar va mazali taomlar rasmlari <strong>@namangan.shashlik</strong> sahifamizda.</p>
+                </div>
+                <a href="https://instagram.com/namangan.shashlik" target="_blank" class="insta-banner-link">
+                    <span>@namangan.shashlik</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Order Total Bar -->
+    <div class="cart-bar" id="cart-bar">
+        <div class="container cart-bar-container">
+            <div class="cart-bar-info">
+                <div class="cart-icon-wrapper">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-badge" id="cart-badge-count">0</span>
+                </div>
+                <div class="cart-summary-text">
+                    <span class="cart-label">Jami hisob:</span>
+                    <span class="cart-total-price" id="cart-total-price">0 so'm</span>
+                </div>
+            </div>
+
+            <div class="cart-bar-actions">
+                <button id="clear-cart-btn" class="cart-secondary-btn" title="Tozalash">
+                    <i class="fa-solid fa-trash-can"></i>
+                    <span class="btn-text-mobile-hide">Tozalash</span>
+                </button>
+                <button id="view-order-btn" class="cart-primary-btn">
+                    <i class="fa-solid fa-receipt"></i>
+                    <span>Buyurtmani ko'rish</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Summary Modal -->
+    <div class="modal-overlay" id="order-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fa-solid fa-receipt"></i>
+                    <h3>Buyurtma Hisobi</h3>
+                </div>
+                <button class="modal-close-btn" id="close-order-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="receipt-header">
+                    <h4>Namangan Shashlik</h4>
+                    <p><i class="fa-brands fa-instagram"></i> @namangan.shashlik</p>
+                    <span class="receipt-date" id="receipt-date"></span>
+                </div>
+
+                <div class="receipt-items-list" id="receipt-items-list">
+                    <!-- Receipt items loaded dynamically -->
+                </div>
+
+                <div class="receipt-divider"></div>
+
+                <div class="receipt-total-row">
+                    <span>Jami to'lov:</span>
+                    <strong id="modal-grand-total">0 so'm</strong>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="modal-secondary-btn" id="modal-clear-btn">
+                    <i class="fa-solid fa-trash-can"></i> Buyurtmani nolga tushirish
+                </button>
+                <button class="modal-primary-btn" id="share-whatsapp-btn">
+                    <i class="fa-brands fa-telegram"></i> Telegram orqali yuborish
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Price Management Modal -->
+    <div class="modal-overlay" id="admin-modal">
+        <div class="modal-card modal-card-large">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fa-solid fa-sliders"></i>
+                    <h3>Narxlarni Boshqarish (Admin)</h3>
+                </div>
+                <button class="modal-close-btn" id="close-admin-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="modal-body">
+                <p class="admin-notice">
+                    <i class="fa-solid fa-circle-info"></i> Har bir taom yoki ichimlik narxini so'mda kiriting. O'zgarishlar brauzeringizda avtomatik saqlanadi.
+                </p>
+
+                <div class="admin-price-grid" id="admin-price-grid">
+                    <!-- Admin price edit inputs loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="modal-secondary-btn" id="reset-prices-btn">
+                    <i class="fa-solid fa-rotate-left"></i> Standart narxlarga qaytarish
+                </button>
+                <button class="modal-primary-btn" id="save-prices-btn">
+                    <i class="fa-solid fa-check"></i> Saqlash & Yopish
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Code Modal -->
+    <div class="modal-overlay" id="qr-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <h3>Stol Menyu QR Kodi Generator</h3>
+                </div>
+                <button class="modal-close-btn" id="close-qr-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="modal-body" style="text-align: center;">
+                <p class="admin-notice" style="justify-content: center; font-size: 13px;">
+                    <i class="fa-solid fa-circle-info"></i> Saytingiz havolasini (linkini) kiriting va avtomatik yaratilgan QR kodni stollarga joylashtiring!
+                </p>
+
+                <div class="qr-url-input-group" style="margin-bottom: 16px; text-align: left;">
+                    <label style="font-size: 12px; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 6px;">
+                        <i class="fa-solid fa-globe"></i> Veb-sayt / Menyu havolasi (Domain link):
+                    </label>
+                    <input type="text" id="qr-url-input" placeholder="Masalan: https://namangan-shashlik.uz" style="width: 100%; background: #0f172a; border: 1px solid var(--primary); padding: 10px 14px; border-radius: var(--radius-md); color: #fff; font-size: 14px; outline: none;">
+                </div>
+
+                <div class="qr-container" style="background: #fff; padding: 16px; border-radius: 16px; display: inline-block;">
+                    <img id="qr-image" src="" alt="Namangan Shashlik Menu QR Code" class="qr-code-img" style="width: 220px; height: 220px; border-radius: 8px;">
+                </div>
+                <p id="qr-display-url" style="margin-top: 10px; font-weight: 700; color: var(--primary); font-size: 14px; word-break: break-all;"></p>
+                <p style="font-size: 12px; color: var(--text-dim);">Xaridorlar skaner qilganda shu saytingiz menyusi ochiladi</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="modal-secondary-btn" id="print-qr-btn">
+                    <i class="fa-solid fa-print"></i> Chop etish / Saqlash
+                </button>
+                <button class="modal-primary-btn" id="close-qr-footer-btn" style="background: linear-gradient(135deg, var(--primary), #ea580c);">
+                    <i class="fa-solid fa-check"></i> Saqlash & Yopish
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon" id="toast-icon"></i>
+        <span id="toast-message">Xabar</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 <strong>Namangan Shashlik</strong>. Barcha huquqlar himoyalangan.</p>
+            <p class="footer-insta">Instagram: <a href="https://instagram.com/namangan.shashlik" target="_blank">@namangan.shashlik</a></p>
+        </div>
+    </footer>
+
+    <!-- App JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
