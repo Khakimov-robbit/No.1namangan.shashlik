@@ -17,15 +17,15 @@ const DEFAULT_MENU = [
     { id: 'qoy_goshti', name: "Qo'y go'shti shashlik", category: 'shashlik', price: 18000, desc: "Maza va siri o'zgacha yumshoq qo'y go'shti shashlik", img: 'images/qoy_goshti_shashlik.png', badge: "Tansiq 🐑" },
 
     // Suvlar va Ichimliklar
-    { id: 'fanta', name: "Fanta (1.5 L)", category: 'drink', price: 12000, desc: "Muzdek salqin va gazlangan apelsinli Fanta", img: 'images/drinks_mix_1786725713620.jpg', badge: "Salqin" },
-    { id: 'cola', name: "Coca Cola (1.5 L)", category: 'drink', price: 12000, desc: "Klassik Coca Cola muzdek idishda", img: 'images/drinks_mix_1786725713620.jpg', badge: "Top" },
-    { id: 'pepsi', name: "Pepsi (1.5 L)", category: 'drink', price: 12000, desc: "Tazelik baxsh etuvchi salqin Pepsi", img: 'images/drinks_mix_1786725713620.jpg', badge: "Salqin" },
-    { id: 'sprite', name: "Sprite (1.5 L)", category: 'drink', price: 12000, desc: "Limon va laym ta'mli tetiklantiruvchi Sprite", img: 'images/drinks_mix_1786725713620.jpg', badge: "Salqin" },
-    { id: 'win_suv', name: "Bezgaz suv Win (1 L)", category: 'drink', price: 4000, desc: "Sof va toza tabiiy bezgaz mineral suv", img: 'images/drinks_mix_1786725713620.jpg', badge: "Tabiiy" },
-    { id: 'kompot', name: "Uy kompoti (1 L)", category: 'drink', price: 10000, desc: "Tabiiy mevalardan tayyorlangan shirin uy kompoti", img: 'images/drinks_mix_1786725713620.jpg', badge: "Uy uslubi" },
-    { id: 'sovuq_choy', name: "Sovuq choy (Ice Tea)", category: 'drink', price: 8000, desc: "Limonli va muzli tetiklantiruvchi sovuq choy", img: 'images/drinks_mix_1786725713620.jpg', badge: "Tetik" },
-    { id: 'qora_choy', name: "Qora choy (Choynak)", category: 'drink', price: 3000, desc: "Xushbo'y damlangan issiq qora choy", img: 'images/drinks_mix_1786725713620.jpg', badge: "Issiq" },
-    { id: 'kok_choy', name: "Ko'k choy (Choynak)", category: 'drink', price: 3000, desc: "Namangan uslubidagi an'anaviy 95-ko'k choy", img: 'images/drinks_mix_1786725713620.jpg', badge: "Milliy" },
+    { id: 'fanta', name: "Fanta (1.5 L)", category: 'drink', price: 12000, desc: "Muzdek salqin va gazlangan apelsinli Fanta", img: 'images/drinks.jpg', badge: "Salqin" },
+    { id: 'cola', name: "Coca Cola (1.5 L)", category: 'drink', price: 12000, desc: "Klassik Coca Cola muzdek idishda", img: 'images/drinks.jpg', badge: "Top" },
+    { id: 'pepsi', name: "Pepsi (1.5 L)", category: 'drink', price: 12000, desc: "Tazelik baxsh etuvchi salqin Pepsi", img: 'images/drinks.jpg', badge: "Salqin" },
+    { id: 'sprite', name: "Sprite (1.5 L)", category: 'drink', price: 12000, desc: "Limon va laym ta'mli tetiklantiruvchi Sprite", img: 'images/drinks.jpg', badge: "Salqin" },
+    { id: 'win_suv', name: "Bezgaz suv Win (1 L)", category: 'drink', price: 4000, desc: "Sof va toza tabiiy bezgaz mineral suv", img: 'images/drinks.jpg', badge: "Tabiiy" },
+    { id: 'kompot', name: "Uy kompoti (1 L)", category: 'drink', price: 10000, desc: "Tabiiy mevalardan tayyorlangan shirin uy kompoti", img: 'images/drinks.jpg', badge: "Uy uslubi" },
+    { id: 'sovuq_choy', name: "Sovuq choy (Ice Tea)", category: 'drink', price: 8000, desc: "Limonli va muzli tetiklantiruvchi sovuq choy", img: 'images/drinks.jpg', badge: "Tetik" },
+    { id: 'qora_choy', name: "Qora choy (Choynak)", category: 'drink', price: 3000, desc: "Xushbo'y damlangan issiq qora choy", img: 'images/drinks.jpg', badge: "Issiq" },
+    { id: 'kok_choy', name: "Ko'k choy (Choynak)", category: 'drink', price: 3000, desc: "Namangan uslubidagi an'anaviy 95-ko'k choy", img: 'images/drinks.jpg', badge: "Milliy" },
 
     // Salatlar va Qo'shimchalar
     { id: 'svejiy_salat', name: "Svejiy salat (Achichuk)", category: 'side', price: 10000, desc: "Yangi pomidor, bodring va toza murchli salat", img: 'images/svejiy_salat.jpg', badge: "Yangi" },
