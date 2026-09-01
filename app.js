@@ -6,31 +6,31 @@
 // Default Dataset
 const DEFAULT_MENU = [
     // Shashliklar
-    { id: 'gosht', name: "Go'sht shashlik", category: 'shashlik', price: 18000, desc: "Tansiq qo'y va mol go'shtidan shirali shashlik", img: 'images/mol_gosht_shashlik.png', badge: "Xushxo'r" },
-    { id: 'yogsiz_gosht', name: "Yog'siz go'sht", category: 'shashlik', price: 18000, desc: "Sof va yog'siz saralangan lahm go'sht shashlik", img: 'images/yogsiz_gosht_shashlik.png', badge: "Dieta" },
-    { id: 'oddiy_qiyma', name: "Oddiy qiyma", category: 'shashlik', price: 15000, desc: "An'anaviy uslubda tayyorlangan qiyma shashlik", img: 'images/oddiy_qiyma_shashlik.png', badge: "Klassik" },
-    { id: 'achchiq_qiyma', name: "Achchiq qiyma", category: 'shashlik', price: 15000, desc: "Achchiq murch va ziravorlar bilan to'yintirilgan qiyma", img: 'images/achchiq_qiyma_shashlik.jpg', badge: "Achchiq 🔥" },
-    { id: 'zakas_qiyma', name: "Zakas qiyma", category: 'shashlik', price: 17000, desc: "Maxsus retsept bo'yicha tayyorlangan yumshoq qiyma", img: 'images/zakas_qiyma_shashlik.png', badge: "Maxsus" },
-    { id: 'rulet', name: "Rulet shashlik", category: 'shashlik', price: 20000, desc: "Yupqa tilim go'sht va pishloqli rulet shashlik", img: 'images/rulet_shashlik.png', badge: "Hit" },
-    { id: 'biqin', name: "Biqin shashlik", category: 'shashlik', price: 22000, desc: "Qapurg'a va biqin go'shtidan xushbo'y shashlik", img: 'images/biqin_shashlik.png', badge: "Tansiq" },
-    { id: 'qanot', name: "Qanot shashlik", category: 'shashlik', price: 14000, desc: "Qarsillama tovuq qanotlaridan pishirilgan shashlik", img: 'images/qanot_shashlik.png', badge: "Tovuq" },
-    { id: 'qoy_goshti', name: "Qo'y go'shti shashlik", category: 'shashlik', price: 18000, desc: "Maza va siri o'zgacha yumshoq qo'y go'shti shashlik", img: 'images/qoy_goshti_shashlik.png', badge: "Tansiq 🐑" },
+    { id: 'gosht', name: "Go'sht shashlik", category: 'shashlik', price: 22000, desc: "Tansiq qo'y va mol go'shtidan shirali shashlik", img: 'images/mol_gosht_shashlik.png', badge: "Xushxo'r" },
+    { id: 'yogsiz_gosht', name: "Yog'siz go'sht", category: 'shashlik', price: 22000, desc: "Sof va yog'siz saralangan lahm go'sht shashlik", img: 'images/yogsiz_gosht_shashlik.png', badge: "Dieta" },
+    { id: 'oddiy_qiyma', name: "Oddiy qiyma", category: 'shashlik', price: 20000, desc: "An'anaviy uslubda tayyorlangan qiyma shashlik", img: 'images/oddiy_qiyma_shashlik.png', badge: "Klassik" },
+    { id: 'achchiq_qiyma', name: "Achchiq qiyma", category: 'shashlik', price: 21000, desc: "Achchiq murch va ziravorlar bilan to'yintirilgan qiyma", img: 'images/achchiq_qiyma_shashlik.jpg', badge: "Achchiq 🔥" },
+    { id: 'zakas_qiyma', name: "Zakas qiyma", category: 'shashlik', price: 21000, desc: "Maxsus retsept bo'yicha tayyorlangan yumshoq qiyma", img: 'images/zakas_qiyma_shashlik.png', badge: "Maxsus" },
+    { id: 'rulet', name: "Rulet shashlik", category: 'shashlik', price: 23000, desc: "Yupqa tilim go'sht va pishloqli rulet shashlik", img: 'images/rulet_shashlik.png', badge: "Hit" },
+    { id: 'biqin', name: "Biqin shashlik", category: 'shashlik', price: 28000, desc: "Qapurg'a va biqin go'shtidan xushbo'y shashlik", img: 'images/biqin_shashlik.png', badge: "Tansiq" },
+    { id: 'qanot', name: "Qanot shashlik", category: 'shashlik', price: 18000, desc: "Qarsillama tovuq qanotlaridan pishirilgan shashlik", img: 'images/qanot_shashlik.png', badge: "Tovuq" },
+    { id: 'qoy_goshti', name: "Qo'y go'shti shashlik", category: 'shashlik', price: 25000, desc: "Maza va siri o'zgacha yumshoq qo'y go'shti shashlik", img: 'images/qoy_goshti_shashlik.png', badge: "Tansiq 🐑" },
 
     // Suvlar va Ichimliklar
-    { id: 'fanta', name: "Fanta (1.5 L)", category: 'drink', price: 12000, desc: "Muzdek salqin va gazlangan apelsinli Fanta", img: 'images/drinks.jpg', badge: "Salqin" },
-    { id: 'cola', name: "Coca Cola (1.5 L)", category: 'drink', price: 12000, desc: "Klassik Coca Cola muzdek idishda", img: 'images/drinks.jpg', badge: "Top" },
-    { id: 'pepsi', name: "Pepsi (1.5 L)", category: 'drink', price: 12000, desc: "Tazelik baxsh etuvchi salqin Pepsi", img: 'images/drinks.jpg', badge: "Salqin" },
-    { id: 'sprite', name: "Sprite (1.5 L)", category: 'drink', price: 12000, desc: "Limon va laym ta'mli tetiklantiruvchi Sprite", img: 'images/drinks.jpg', badge: "Salqin" },
+    { id: 'fanta', name: "Fanta (1.5 L)", category: 'drink', price: 15000, desc: "Muzdek salqin va gazlangan apelsinli Fanta", img: 'images/drinks.jpg', badge: "Salqin" },
+    { id: 'cola', name: "Coca Cola (1.5 L)", category: 'drink', price: 15000, desc: "Klassik Coca Cola muzdek idishda", img: 'images/drinks.jpg', badge: "Top" },
+    { id: 'pepsi', name: "Pepsi (1.5 L)", category: 'drink', price: 15000, desc: "Tazelik baxsh etuvchi salqin Pepsi", img: 'images/drinks.jpg', badge: "Salqin" },
+    { id: 'sprite', name: "Sprite (1.5 L)", category: 'drink', price: 15000, desc: "Limon va laym ta'mli tetiklantiruvchi Sprite", img: 'images/drinks.jpg', badge: "Salqin" },
     { id: 'win_suv', name: "Bezgaz suv Win (1 L)", category: 'drink', price: 4000, desc: "Sof va toza tabiiy bezgaz mineral suv", img: 'images/drinks.jpg', badge: "Tabiiy" },
     { id: 'kompot', name: "Uy kompoti (1 L)", category: 'drink', price: 10000, desc: "Tabiiy mevalardan tayyorlangan shirin uy kompoti", img: 'images/drinks.jpg', badge: "Uy uslubi" },
-    { id: 'sovuq_choy', name: "Sovuq choy (Ice Tea)", category: 'drink', price: 8000, desc: "Limonli va muzli tetiklantiruvchi sovuq choy", img: 'images/drinks.jpg', badge: "Tetik" },
+    { id: 'sovuq_choy', name: "Sovuq choy (Ice Tea)", category: 'drink', price: 5000, desc: "Limonli va muzli tetiklantiruvchi sovuq choy", img: 'images/drinks.jpg', badge: "Tetik" },
     { id: 'qora_choy', name: "Qora choy (Choynak)", category: 'drink', price: 3000, desc: "Xushbo'y damlangan issiq qora choy", img: 'images/drinks.jpg', badge: "Issiq" },
     { id: 'kok_choy', name: "Ko'k choy (Choynak)", category: 'drink', price: 3000, desc: "Namangan uslubidagi an'anaviy 95-ko'k choy", img: 'images/drinks.jpg', badge: "Milliy" },
 
     // Salatlar va Qo'shimchalar
     { id: 'svejiy_salat', name: "Svejiy salat (Achichuk)", category: 'side', price: 10000, desc: "Yangi pomidor, bodring va toza murchli salat", img: 'images/svejiy_salat.jpg', badge: "Yangi" },
-    { id: 'suzma', name: "Suzma", category: 'side', price: 8000, desc: "Ko'katlar va osh tuzlangan mazali uzbek suzmasi", img: 'images/suzma.jpg', badge: "Milliy" },
-    { id: 'piyoz', name: "Sirka piyoz", category: 'side', price: 3000, desc: "Sirka va ziravorlar bilan marinovka qilingan piyoz", img: 'images/piyoz.jpg', badge: "Qo'shimcha" },
+    { id: 'suzma', name: "Suzma", category: 'side', price: 5000, desc: "Ko'katlar va osh tuzlangan mazali uzbek suzmasi", img: 'images/suzma.jpg', badge: "Milliy" },
+    { id: 'piyoz', name: " piyoz", category: 'side', price: 0, desc: "Sirka va ziravorlar bilan marinovka qilingan piyoz", img: 'images/piyoz.jpg', badge: "Qo'shimcha" },
     { id: 'mumtoz_non', name: "Mumtoz non", category: 'side', price: 5000, desc: "Chekichida M harfi tushirilgan issiq va qarsillama tandir noni", img: 'images/mumtoz_non.jpg', badge: "Tandir non 🍞" }
 ];
 
